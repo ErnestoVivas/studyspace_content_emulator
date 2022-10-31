@@ -99,8 +99,10 @@ class _MyHomePageState extends State<MyHomePage> {
       // parse file content
       List<List<dynamic>> displayElementsCSV = [];
       List<DisplayElement> newDisplayElements = [];
-      List<String> rows = overviewContent.split('\n');       // assumes \n as eol delimiter
+      List<String> rows = overviewContent.split('CRLF');       // assumes \n as eol delimiter
+      int i = 0;
       for(String row in rows) {
+        print('Row ${++i}');
         List<dynamic> rowElements = row.split('\t');
         if(rowElements.length > 1) {
           displayElementsCSV.add(rowElements);

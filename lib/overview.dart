@@ -5,7 +5,7 @@ import 'package:studyspace_content_emulator/amplify_s3_getter.dart';
 import 'package:katex_flutter/katex_flutter.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
 import 'package:flutter_math_fork/ast.dart';
-
+import 'package:flutter_markdown/flutter_markdown.dart';
 
 
 class OverviewPageArgs {
@@ -200,7 +200,7 @@ class _OverviewPageState extends State<OverviewPage> {
           textStyle: const TextStyle(fontSize: 20)
         )
       );
-    } else {
+    } else if(_displayElements[currentPage][elementIndex].type == 3) {
       if(_images[valueStr] != null) {
         contentWidget = Image.file(
           _images[valueStr]!
@@ -212,6 +212,16 @@ class _OverviewPageState extends State<OverviewPage> {
           textAlign: TextAlign.center,
         );
       }
+    } else {
+      if(valueStr[0] == '"') {
+        valueStr = valueStr.substring(1);
+      }
+      if(valueStr[valueStr.length-1] == '"') {
+        valueStr = valueStr.substring(0, valueStr.length-1);
+      }
+      contentWidget = MarkdownBody(
+        data: valueStr
+      );
     }
     return contentWidget;
   }

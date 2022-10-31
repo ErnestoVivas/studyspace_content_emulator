@@ -1,7 +1,58 @@
-id	key	page	index	type	value
-9df20889-2671-4efa-8d9e-5bc63d1f945a	Mathe/Analysis/Extrempunkte/overview/page0/0	0	0	0	Ein Extrempunkt (Hoch-/Tiefpunkt) einer Funktion ist der höchste oder tiefste Punkt des Funktionsgraphen. Es wird zwischen lokalen und globalen Extrempunkten unterschieden. Ein lokaler Hoch- oder Tiefpunkt liegt vor, wenn der Punkt in einem bestimmten Intervall den höchsten oder tiefsten Funktionswert darstellt. Es ist jedoch nicht ausgeschlossen, dass die Funktion an einem anderen Punkt einen höheren oder tieferen Wert annimmt. Ein globaler Extrempunkt liegt vor, wenn es sich um den höchsten oder tiefsten Wert der Funktion im gesamten Betrachtungsgebiet handelt.
-9f3ccfc3-88c4-49cd-bda3-0bde307d1990	Mathe/Analysis/Extrempunkte/overview/page0/1	0	1	3	studylib/Mathe/Analysis/Extrempunkte/overview/Extrempunkte_overview_0.jpg
-b46a9525-afb0-4645-89e7-1271cf31b424	Mathe/Analysis/Extrempunkte/overview/page0/2	0	2	0	Um die Extrempunkte einer Funktion zu bestimmen existieren verschiedene Varianten. Zum einen kann man die Extrempunkte grafisch bestimmten, in dem die Hoch- und Tiefpunkte am Funktionsgraphen abgelesen werden. Zum anderen können die Extrempunkte berechnet werden. Hierzu werden die Ableitungen der Funktion benötigt.
-5c32b286-f6d8-4d55-9f55-4b836d84ecf6	Mathe/Analysis/Extrempunkte/overview/page0/3	0	3	1	Zunächst müssen die Begrifflichkeiten geklärt werden. Als Extremstelle wird ein Wert für x verstanden, bei dem die Funktion einen Hoch- oder Tiefpunkt besitzt. Als Extremwert wird der y Wert der Funktion bei der Extremstelle bezeichnet. Ein Extrempunkt setzt sich aus beiden Werten $(x | y)$ zusammen.\n\nUm die Extremstelle einer Funktion $f(x)$ zu berechnen, muss die Nullstelle der ersten Ableitung berechnet werden $f^{\prime}(x) = 0$ Dies wird als Notwendige Bedingung bezeichnet. Um zu prüfen, ob es sich bei der berechneten Stelle tatsächlich um eine Extremstelle handelt, und ob es sich um einen Hoch- oder Tiefpunkt handelt, muss das Ergebnis in die 2. Ableitung $f^\prime(x)$ eingesetzt werden. Dies ist die Hinreichende Bedingung. Um den Extremwert zu berechnent, wird der berechnete x Wert anschließend in die Ausgangsfunktion eingesetzt. Die Berechnung von Extremstellen wird im folgenden erläutert.
-55126fb2-24d7-4823-aef3-e1e9da1ade50	Mathe/Analysis/Extrempunkte/overview/page1/0	1	4	1	Die Notwendige Bedigung für einen Extremwert lautet $f\textrm{'}(x) = 0$. Diese wird geprüft um herauszufinden, ob und wo Extrempunkte existieren können.
-2d754845-119b-4cb2-b6b1-aa511d11aa0c	Mathe/Analysis/Extrempunkte/overview/page1/1	1	5	2	\begin{aligned} f(x) = &2x^2 + x \\ f'(x) = &4x + 1 \\ 4x + 1 &= 0 \\ 4x &= -1 \\ x &= -\frac{1}{4} \end{aligned}
+id	key	page	index	type	value		CRLF
+9df20889-2671-4efa-8d9e-5bc63d1f945a	Mathe/Analysis/Extrempunkte/overview/page0/0	0	0	0	Ein Extrempunkt (Hoch-/Tiefpunkt) einer Funktion ist der höchste oder tiefste Punkt des Funktionsgraphen. Es wird zwischen lokalen und globalen Extrempunkten unterschieden. Ein lokaler Hoch- oder Tiefpunkt liegt vor, wenn der Punkt in einem bestimmten Intervall den höchsten oder tiefsten Funktionswert darstellt. Es ist jedoch nicht ausgeschlossen, dass die Funktion an einem anderen Punkt einen höheren oder tieferen Wert annimmt. Ein globaler Extrempunkt liegt vor, wenn es sich um den höchsten oder tiefsten Wert der Funktion im gesamten Betrachtungsgebiet handelt.		CRLF
+9f3ccfc3-88c4-49cd-bda3-0bde307d1990	Mathe/Analysis/Extrempunkte/overview/page0/1	0	1	3	studylib/Mathe/Analysis/Extrempunkte/overview/Extrempunkte_overview_0.jpg		CRLF
+b46a9525-afb0-4645-89e7-1271cf31b424	Mathe/Analysis/Extrempunkte/overview/page0/2	0	2	0	Um die Extrempunkte einer Funktion zu bestimmen existieren verschiedene Varianten. Zum einen kann man die Extrempunkte grafisch bestimmten, in dem die Hoch- und Tiefpunkte am Funktionsgraphen abgelesen werden. Zum anderen können die Extrempunkte berechnet werden. Hierzu werden die Ableitungen der Funktion benötigt.		CRLF
+5c32b286-f6d8-4d55-9f55-4b836d84ecf6	Mathe/Analysis/Extrempunkte/overview/page0/3	0	3	1	Zunächst müssen die Begrifflichkeiten geklärt werden. Als Extremstelle wird ein Wert für x verstanden, bei dem die Funktion einen Hoch- oder Tiefpunkt besitzt. Als Extremwert wird der y Wert der Funktion bei der Extremstelle bezeichnet. Ein Extrempunkt setzt sich aus beiden Werten $(x | y)$ zusammen.\n\nUm die Extremstelle einer Funktion $f(x)$ zu berechnen, muss die Nullstelle der ersten Ableitung berechnet werden $f^{\prime}(x) = 0$ Dies wird als Notwendige Bedingung bezeichnet. Um zu prüfen, ob es sich bei der berechneten Stelle tatsächlich um eine Extremstelle handelt, und ob es sich um einen Hoch- oder Tiefpunkt handelt,		CRLF
+55126fb2-24d7-4823-aef3-e1e9da1ade50	Mathe/Analysis/Extrempunkte/overview/page1/0	1	4	1	Die Notwendige Bedigung für einen Extremwert lautet $f\textrm{'}(x) = 0$. Diese wird geprüft um herauszufinden, ob und wo Extrempunkte existieren können. muss das Ergebnis in die 2. Ableitung $f^\prime(x)$ eingesetzt werden. Dies ist die Hinreichende Bedingung. Um den Extremwert zu berechnen, wird der berechnete x Wert anschließend in die Ausgangsfunktion eingesetzt. Die Berechnung von Extremstellen wird im folgenden erläutert.		CRLF
+2d754845-119b-4cb2-b6b1-aa511d11aa0c	Mathe/Analysis/Extrempunkte/overview/page1/1	1	5	2	\begin{aligned} f(x) = &2x^2 + x \\ f'(x) = &4x + 1 \\ 4x + 1 &= 0 \\ 4x &= -1 \\ x &= -\frac{1}{4} \end{aligned}		CRLF
+asdasds	Mathe/Analysis/Extrempunkte/overview/page1/2	1	6	4	"# Title
+This is my markdown text  
+
+
+## Title 2
+Some other Text  
+  
+  
+### Title 3
+- bullet list one
+- bullet list two
+- Mathematical expression: $ 1 \ne 2$
+
+
+## Quotations
+> RWTH ist besser als Uni Köln
+
+| Tables   |      Are      |  Cool |
+|----------|-------------|------|
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
+
+> ## Blockquoted header
+>
+> This is blockquoted text.
+>
+> This is a second paragraph within the blockquoted text.
+
+Markdown is a `<em>text-to-html</em>` conversion tool for writers.
+
+This is *emphasized* _text_.
+
+This is very heavily **emphasized** __text__.
+
+#### Numbered list
+1. First item
+2. Second item
+3. etc.
+
+#### Nested list
+- First level
+  - second level
+    - third level
+
+#### Nested list, changing characters
+- First level
+  + second level
+    * third level
+"		CRLF
+sdfsdsfdsdf	Mathe/Analysis/Extrempunkte/overview/page1/3	1	7	0	Pure Text element.		CRLF
