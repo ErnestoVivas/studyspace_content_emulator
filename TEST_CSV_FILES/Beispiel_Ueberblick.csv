@@ -1,0 +1,85 @@
+id	key	page	index	type	value	CRLF
+0/1/2/overview/0/0	0/1/2/overview	0	0	0	Elemente vom Typ ‘0’ sind reine Textelemente. Dies war der erste Elementtyp, der definiert wurde. In den meisten Fällen ist dieser Typ nicht notwendig, da Texte in der Regel im Markdown-Format erstellt werden. Auf Wunsch können jedoch Textabschnitte weiterhin als reine Textelemente erstellt werden.	CRLF
+0/1/2/overview/0/1	0/1/2/overview	0	1	1	"# Markdown
+Elemente vom Typ ‘1’ sind Texte im Markdown-Format. Markdown ist eine Sprache zur einfachen Erstellung von Texten
+mit Elementen wie Titeln, Tabellen, Stichpunkten, Zitierungen, etc, ähnlich wie HTML. Da die ‘Rohform’ von Markdown reine
+Zeichenketten-Texte (Strings) sind, lassen sich Markdown-Texte einfach in Datenbanken abspeichern. Ein Überblick über die
+verschiedenen Elemente des Markdown-Textsatzes wir hier gegeben, weitere können im Internet gefunden werden.
+
+# Titel 1
+## Titel 2
+### Titel 3
+#### Titel 4
+##### Titel 5
+###### Titel 6
+
+Verschiedene Arten von Stichpunkten-Listen:
+
+### Bullet points
+- Item 1
+- Item 2
+
+### Verschachtelte bullet points
+- Item 1
+  - Subitem 1
+- Item 2
+  - Subitem 2
+    - Subsubitem
+
+### Nummerierte Sichpunkte
+1. Erster Stichpunkt
+2. Zweiter Stichpunkt
+
+### Mix
+1. Nummerierter Stichpunkt
+    1. Nummerierter Unterpunkt
+2. Zweiter Stichpunkt
+    - Unnummerierter Unterpunkt
+
+## Tabellen
+| Fach | Thema | Klassenstufe |
+|---|-----|---|
+| Mathe | Dreisatz | 7 |
+| Mathe | Integralrechnung | Q2 |
+| Deutsch | Nathan der Weise | Q1 |
+
+## Zitate oder Textboxen
+> “No se habla de Bruno.”
+> \- Familia Madrigal
+
+## Textformatierungen
+Neben normalem Text kann man auch *kursiv*, **fett** oder ***fett kursiv*** schreiben.
+
+## Code
+Code im Text lässt sich als `Inline-Code` schreiben. Dies kann z.B. auch für Markierungen / Hervorhebungen im
+Text verwendet werden. Code Blöcke lassen sich wie folgt erstellen:
+```
+int sum(int &stop) {
+    int result = 0;        
+    for(int i = 0; i < stop; ++i) {
+        result += (i+1);
+    }
+    return result;
+}
+```
+
+
+Auf der nächsten Seite finden sich Beispiele zur Anzeige von Mathematischen Ausdrücken und Bildern. Für Texte ohne
+Bilder und mathematische Ausdrücke sollte das Markdown Format so oft wie möglich genutzt werden. Es ist kein Problem,
+lange Markdown-Texte in ein Element zu packen; das Limit liegt bei 64kB pro Element (1kB entspricht etwa ~150-200 Wörtern), dieses Limit sollte also praktisch nicht erreicht werden. Nach Möglichkeit sollen so wenig Datenbankelemente
+(= Zeilen in der CSV) pro Überblick wie möglich erstellt werden.
+"	CRLF
+0/1/2/overview/1/0	0/1/2/overview	1	2	2	Elemente vom Typ ‘2’ sind Texte mit LaTeX Ausdrücken im Text, z.B. $f(x) = x^2 +2x + 2$. Wenn möglich sollte die Nutzung dieses Typs vermieden werden und stattdessen der Typ ‘3’ verwendet werden. Das Nächste Elemente besitzt den Typ 3, welches reine LaTex-Ausdrücke außerhalb des Textes anzeigt.   	CRLF
+0/1/2/overview/1/1	0/1/2/overview	1	3	3	"\begin{aligned}
+x^2 + 2x - 2 &= 0 \\
+x_{1,2} &= -\frac{2}{2} \pm \sqrt{ \left(\frac{2}{2}\right)^2 - (-2)} \\
+x_{1,2} &= -1 \pm \sqrt{1+2} \\
+x_1 &= -1 + \sqrt{3} \\
+x_2 &= -1 - \sqrt{3} \\
+\end{aligned}"	CRLF
+0/1/2/overview/1/2	0/1/2/overview	1	4	1	"## Bilder
+Bilder werden als Datei in einem S3 Bucket gespeichert. S3 Buckets sind eine Art Cloud-Dateisystem, welches im
+AWS Backend der App liegt. Um ein Bild im Überblick anzuzeigen wird ein Element des Typs ‘4’ angelegt, welche den
+Dateinamen und Pfad des Bildes angibt. Genaue Informationen über die Dateibennung, Pfadangabe und technische
+Realisierung der Bildanzeige befinden sich in der Dokumentation."	CRLF
+0/1/2/overview/1/3	0/1/2/overview	1	5	4	studylib/Mathe/Analysis/Extrempunkte/overview/Extrempunkte_overview_0.jpg	CRLF

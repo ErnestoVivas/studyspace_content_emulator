@@ -153,7 +153,7 @@ class _OverviewPageState extends State<OverviewPage> {
   void _loadImages() async {
     for(int i = 0; i < _displayElements.length; ++i) {
       for(int j = 0; j < _displayElements[i].length; ++j) {
-        if(_displayElements[i][j].type == 3) {
+        if(_displayElements[i][j].type == 4) {
           String valueStr = _displayElements[i][j].value ?? '';
           File? newImage = await _loadOverviewImage(valueStr);
           _images[valueStr] = newImage;
@@ -175,32 +175,76 @@ class _OverviewPageState extends State<OverviewPage> {
     String valueStr = _displayElements[currentPage][elementIndex].value ?? '';
     debugPrint(valueStr);
     valueStr = valueStr.replaceAll(r'\n', '\n');
+    if(valueStr[0] == '"') {
+      valueStr = valueStr.substring(1);
+    }
+    if(valueStr[valueStr.length-1] == '"') {
+      valueStr = valueStr.substring(0, valueStr.length-1);
+    }
     if(_displayElements[currentPage][elementIndex].type == 0) {
       contentWidget = Text(
         valueStr,
         textAlign: TextAlign.justify,
+        style: TextStyle(
+          height: 1.5,
+        ),
       );
     } else if(_displayElements[currentPage][elementIndex].type == 1) {
-      contentWidget = Builder(
-        builder: (context) => KaTeX(
-          laTeXCode: Text(
-            valueStr,
-            textAlign: TextAlign.justify,
-            style: TextStyle(
-              fontWeight: FontWeight.normal
-            ),
-          )
-        )
+      contentWidget = MarkdownBody(
+        data: valueStr,
+        styleSheet: MarkdownStyleSheet(
+          a: TextStyle(
+            height: 1.5,
+          ),
+          p: TextStyle(
+            height: 1.5,
+          ),
+          blockquote: TextStyle(
+            height: 1.5,
+          ),
+          h1: TextStyle(
+            height: 2.7,
+          ),
+          h2: TextStyle(
+            height: 2.4,
+          ),
+          h3: TextStyle(
+            height: 2.4,
+          ),
+          h4: TextStyle(
+            height: 2.2,
+          ),
+          h5: TextStyle(
+            height: 2.2,
+          ),
+          h6: TextStyle(
+            height: 2.0,
+          ),
+          textAlign: WrapAlignment.spaceEvenly
+        ),
       );
     } else if(_displayElements[currentPage][elementIndex].type == 2) {
+      contentWidget = KaTeX(
+        laTeXCode: Text(
+          valueStr,
+          textAlign: TextAlign.justify,
+          style: TextStyle(
+            fontWeight: FontWeight.normal,
+            height: 1.5
+          ),
+        )
+      );
+    } else if(_displayElements[currentPage][elementIndex].type == 3) {
       contentWidget = Center(
         child: Math.tex(
           valueStr,
           mathStyle: MathStyle.display,
-          textStyle: const TextStyle(fontSize: 20)
+          textStyle: const TextStyle(
+            fontSize: 20,
+          ),
         )
       );
-    } else if(_displayElements[currentPage][elementIndex].type == 3) {
+    } else {
       if(_images[valueStr] != null) {
         contentWidget = Image.file(
           _images[valueStr]!
@@ -212,16 +256,6 @@ class _OverviewPageState extends State<OverviewPage> {
           textAlign: TextAlign.center,
         );
       }
-    } else {
-      if(valueStr[0] == '"') {
-        valueStr = valueStr.substring(1);
-      }
-      if(valueStr[valueStr.length-1] == '"') {
-        valueStr = valueStr.substring(0, valueStr.length-1);
-      }
-      contentWidget = MarkdownBody(
-        data: valueStr
-      );
     }
     return contentWidget;
   }
