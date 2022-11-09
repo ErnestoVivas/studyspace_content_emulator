@@ -1,0 +1,43 @@
+# Single Choice questions erstellen
+
+
+Dateiformat: TSV Datei (bzw. CSV Datei mit tabs als Trennzeichen)
+
+Spalten (Attribute) pro Single Choice Frage:
+- id: wird automatisch gesetzt (leer lassen)
+- key: [String] <subject_key>/<topic_key>/<subtopic_key>/<exercise_type>/<set_number>/<question_number> (Pflichtfeld)
+- title: [String] (Pflichtfeld)
+- image: [String] Dateipfad zu Bild im S3 Bucket (studylib/<subject_key>/<topic_key>/<subtopic_key>/<exercise_type>/image_filename) (optional)  
+- equation: [String] Mathematischer Latex-Ausdruck (optional)
+- description: [String] Ausführliche Beschreibung des Problems (optional)
+- question: [int] Frage (Pflichtfeld)
+- numberOfAnswers: [int] (Wert zwischen 2 und 5) (Pflichtfeld)
+- correctAnswer: [int] (0,...,4) (Pflichtfeld)
+- answer0 [String] (Pflichtfeld)
+- answer1 [String] (Pflichtfeld)
+- answer2 [String] (Pflicht wenn numberOfAnswers > 2, sonst optional)
+- answer3 [String] (Pflicht wenn numberOfAnswers > 3, sonst optional)
+- answer4 [String] (Pflicht wenn numberOfAnswers > 4, sonst optional)
+- hint [String] (optional)
+
+Anmerkungen:
+
+1) Für die Antworten gilt: Es kann entweder ein Text oder ein mathematischer Ausdruck als Antwort angegeben werden. Eine Mischung Text/Gleichung
+ist nicht erlaubt. Handelt es sich bei der Antwort um einen mathematischen Ausdruck, so muss am Anfang und am Ende ein $-Zeichen gesetzt werden,
+z.B. $f(x) = y$.
+
+2) Für description, question und hint dürfen Text und Gleichungen gemischt werden. Dabei Gleichungen müssen zwischen $-Zeichen gesetzt werden.
+
+3) 'optional' bedeutet, dass die Spalte leer sein darf (sie muss jedoch existieren).
+
+4) Die letzte Spalte muss stets 'CRLF' sein.
+
+5) Für Angabe des keys die Dokumentation lesen. Als <exercise_type> können 'basics', 'medium' und 'difficult' angegeben werden.
+
+
+# Übergabe
+Grundsätzlich ist es egal, wie viele Single Choice Questions in einer CSV liegen. Diese dürfen auch zu unterschiedlichen Themen gehören, solange
+die keys korrekt gesetzt wurden.
+
+Der Übersicht halber sollte ein Set an Single Choice Questions welche zu einem Thema (beispielsweise alle Questions von
+Mathe/Analysis/Geometrie/Basiswissen) in einer Datei gespeichert und abgegeben werden.

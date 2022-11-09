@@ -33,6 +33,7 @@ class DisplayElement extends Model {
   final int? _index;
   final int? _type;
   final String? _value;
+  final bool? _lk;
   final TemporalDateTime? _createdAt;
   final TemporalDateTime? _updatedAt;
 
@@ -64,6 +65,10 @@ class DisplayElement extends Model {
     return _value;
   }
   
+  bool? get lk {
+    return _lk;
+  }
+  
   TemporalDateTime? get createdAt {
     return _createdAt;
   }
@@ -72,16 +77,17 @@ class DisplayElement extends Model {
     return _updatedAt;
   }
   
-  const DisplayElement._internal({required this.id, key, page, index, type, value, createdAt, updatedAt}): _key = key, _page = page, _index = index, _type = type, _value = value, _createdAt = createdAt, _updatedAt = updatedAt;
+  const DisplayElement._internal({required this.id, key, page, index, type, value, lk, createdAt, updatedAt}): _key = key, _page = page, _index = index, _type = type, _value = value, _lk = lk, _createdAt = createdAt, _updatedAt = updatedAt;
   
-  factory DisplayElement({String? id, String? key, int? page, int? index, int? type, String? value}) {
+  factory DisplayElement({String? id, String? key, int? page, int? index, int? type, String? value, bool? lk}) {
     return DisplayElement._internal(
       id: id == null ? UUID.getUUID() : id,
       key: key,
       page: page,
       index: index,
       type: type,
-      value: value);
+      value: value,
+      lk: lk);
   }
   
   bool equals(Object other) {
@@ -97,7 +103,8 @@ class DisplayElement extends Model {
       _page == other._page &&
       _index == other._index &&
       _type == other._type &&
-      _value == other._value;
+      _value == other._value &&
+      _lk == other._lk;
   }
   
   @override
@@ -114,6 +121,7 @@ class DisplayElement extends Model {
     buffer.write("index=" + (_index != null ? _index!.toString() : "null") + ", ");
     buffer.write("type=" + (_type != null ? _type!.toString() : "null") + ", ");
     buffer.write("value=" + "$_value" + ", ");
+    buffer.write("lk=" + (_lk != null ? _lk!.toString() : "null") + ", ");
     buffer.write("createdAt=" + (_createdAt != null ? _createdAt!.format() : "null") + ", ");
     buffer.write("updatedAt=" + (_updatedAt != null ? _updatedAt!.format() : "null"));
     buffer.write("}");
@@ -121,14 +129,15 @@ class DisplayElement extends Model {
     return buffer.toString();
   }
   
-  DisplayElement copyWith({String? id, String? key, int? page, int? index, int? type, String? value}) {
+  DisplayElement copyWith({String? id, String? key, int? page, int? index, int? type, String? value, bool? lk}) {
     return DisplayElement._internal(
       id: id ?? this.id,
       key: key ?? this.key,
       page: page ?? this.page,
       index: index ?? this.index,
       type: type ?? this.type,
-      value: value ?? this.value);
+      value: value ?? this.value,
+      lk: lk ?? this.lk);
   }
   
   DisplayElement.fromJson(Map<String, dynamic> json)  
@@ -138,11 +147,12 @@ class DisplayElement extends Model {
       _index = (json['index'] as num?)?.toInt(),
       _type = (json['type'] as num?)?.toInt(),
       _value = json['value'],
+      _lk = json['lk'],
       _createdAt = json['createdAt'] != null ? TemporalDateTime.fromString(json['createdAt']) : null,
       _updatedAt = json['updatedAt'] != null ? TemporalDateTime.fromString(json['updatedAt']) : null;
   
   Map<String, dynamic> toJson() => {
-    'id': id, 'key': _key, 'page': _page, 'index': _index, 'type': _type, 'value': _value, 'createdAt': _createdAt?.format(), 'updatedAt': _updatedAt?.format()
+    'id': id, 'key': _key, 'page': _page, 'index': _index, 'type': _type, 'value': _value, 'lk': _lk, 'createdAt': _createdAt?.format(), 'updatedAt': _updatedAt?.format()
   };
 
   static final QueryField ID = QueryField(fieldName: "id");
@@ -151,6 +161,7 @@ class DisplayElement extends Model {
   static final QueryField INDEX = QueryField(fieldName: "index");
   static final QueryField TYPE = QueryField(fieldName: "type");
   static final QueryField VALUE = QueryField(fieldName: "value");
+  static final QueryField LK = QueryField(fieldName: "lk");
   static var schema = Model.defineSchema(define: (ModelSchemaDefinition modelSchemaDefinition) {
     modelSchemaDefinition.name = "DisplayElement";
     modelSchemaDefinition.pluralName = "DisplayElements";
@@ -196,6 +207,12 @@ class DisplayElement extends Model {
       key: DisplayElement.VALUE,
       isRequired: false,
       ofType: ModelFieldType(ModelFieldTypeEnum.string)
+    ));
+    
+    modelSchemaDefinition.addField(ModelFieldDefinition.field(
+      key: DisplayElement.LK,
+      isRequired: false,
+      ofType: ModelFieldType(ModelFieldTypeEnum.bool)
     ));
     
     modelSchemaDefinition.addField(ModelFieldDefinition.nonQueryField(

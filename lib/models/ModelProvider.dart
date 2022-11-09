@@ -21,24 +21,22 @@
 
 import 'package:amplify_core/amplify_core.dart';
 import 'DisplayElement.dart';
-import 'MultipleChoiceQuestion.dart';
-import 'MultipleChoiceQuestionSet.dart';
+import 'SingleChoiceQuestion.dart';
 import 'Subtopic.dart';
 import 'Topic.dart';
 import 'TopicCategories.dart';
 
 export 'DisplayElement.dart';
-export 'MultipleChoiceQuestion.dart';
-export 'MultipleChoiceQuestionSet.dart';
+export 'SingleChoiceQuestion.dart';
 export 'Subtopic.dart';
 export 'Topic.dart';
 export 'TopicCategories.dart';
 
 class ModelProvider implements ModelProviderInterface {
   @override
-  String version = "496b0f4a25a5a48035dab48177f84b2b";
+  String version = "8d318467aa39060900babe6c40de0c50";
   @override
-  List<ModelSchema> modelSchemas = [DisplayElement.schema, MultipleChoiceQuestion.schema, MultipleChoiceQuestionSet.schema, Subtopic.schema, Topic.schema];
+  List<ModelSchema> modelSchemas = [DisplayElement.schema, SingleChoiceQuestion.schema, Subtopic.schema, Topic.schema];
   static final ModelProvider _instance = ModelProvider();
   @override
   List<ModelSchema> customTypeSchemas = [TopicCategories.schema];
@@ -49,10 +47,8 @@ class ModelProvider implements ModelProviderInterface {
     switch(modelName) {
       case "DisplayElement":
         return DisplayElement.classType;
-      case "MultipleChoiceQuestion":
-        return MultipleChoiceQuestion.classType;
-      case "MultipleChoiceQuestionSet":
-        return MultipleChoiceQuestionSet.classType;
+      case "SingleChoiceQuestion":
+        return SingleChoiceQuestion.classType;
       case "Subtopic":
         return Subtopic.classType;
       case "Topic":

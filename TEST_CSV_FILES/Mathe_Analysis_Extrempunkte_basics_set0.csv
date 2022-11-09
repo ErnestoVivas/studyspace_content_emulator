@@ -1,3 +1,0 @@
-id,key,image,equation,description,question,numberOfAnswers,answer0,answer1,answer2,answer3,answer4,correctAnswer,title,multiplechoicequestionsetID
-Mathe-Analysis-Extrempunkte-basics-set0-question0,Mathe/Analysis/Extrempunkte/basics/set0/question0,na,f(x) = -x^2,na,Die Parabel besitzt einen Extrempunkt. Handelt es sich um einen Hoch- oder Tiefpunkt?,3,Hochpunkt,Tiefpunkt,Nicht genügend Informationen,na,na,0,Extrempunkte,6794b9d4-7b21-4a62-8cce-17521df0942c
-Mathe-Analysis-Extrempunkte-basics-set0-question1,Mathe/Analysis/Extrempunkte/basics/set0/question1,na,3(x+2)^2,na,Die Parabel besitzt einen Tiefpunkt. Bei welcher Stelle liegt dieser?,4,$x = 2$,$x = -2$,$x = -3$,$x = 0$,na,1,Tiefpunkt,6794b9d4-7b21-4a62-8cce-17521df0942c

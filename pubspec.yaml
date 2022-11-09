@@ -33,6 +33,7 @@ dependencies:
   path_provider: ^2.0.11
   amplify_flutter: ^0.6.0
   amplify_datastore: ^0.6.0
+  desktop_window: ^0.4.0
 
   # packages to display math content
   flutter_math_fork: ^0.6.3+1         # preferred package
