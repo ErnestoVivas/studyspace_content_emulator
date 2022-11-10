@@ -41,6 +41,7 @@ class SingleChoiceQuestion extends Model {
   final String? _answer2;
   final String? _answer3;
   final String? _answer4;
+  final String? _hint;
   final TemporalDateTime? _createdAt;
   final TemporalDateTime? _updatedAt;
 
@@ -104,6 +105,10 @@ class SingleChoiceQuestion extends Model {
     return _answer4;
   }
   
+  String? get hint {
+    return _hint;
+  }
+  
   TemporalDateTime? get createdAt {
     return _createdAt;
   }
@@ -112,9 +117,9 @@ class SingleChoiceQuestion extends Model {
     return _updatedAt;
   }
   
-  const SingleChoiceQuestion._internal({required this.id, key, title, image, equation, description, question, numberOfAnswers, correctAnswer, answer0, answer1, answer2, answer3, answer4, createdAt, updatedAt}): _key = key, _title = title, _image = image, _equation = equation, _description = description, _question = question, _numberOfAnswers = numberOfAnswers, _correctAnswer = correctAnswer, _answer0 = answer0, _answer1 = answer1, _answer2 = answer2, _answer3 = answer3, _answer4 = answer4, _createdAt = createdAt, _updatedAt = updatedAt;
+  const SingleChoiceQuestion._internal({required this.id, key, title, image, equation, description, question, numberOfAnswers, correctAnswer, answer0, answer1, answer2, answer3, answer4, hint, createdAt, updatedAt}): _key = key, _title = title, _image = image, _equation = equation, _description = description, _question = question, _numberOfAnswers = numberOfAnswers, _correctAnswer = correctAnswer, _answer0 = answer0, _answer1 = answer1, _answer2 = answer2, _answer3 = answer3, _answer4 = answer4, _hint = hint, _createdAt = createdAt, _updatedAt = updatedAt;
   
-  factory SingleChoiceQuestion({String? id, String? key, String? title, String? image, String? equation, String? description, String? question, int? numberOfAnswers, int? correctAnswer, String? answer0, String? answer1, String? answer2, String? answer3, String? answer4}) {
+  factory SingleChoiceQuestion({String? id, String? key, String? title, String? image, String? equation, String? description, String? question, int? numberOfAnswers, int? correctAnswer, String? answer0, String? answer1, String? answer2, String? answer3, String? answer4, String? hint}) {
     return SingleChoiceQuestion._internal(
       id: id == null ? UUID.getUUID() : id,
       key: key,
@@ -129,7 +134,8 @@ class SingleChoiceQuestion extends Model {
       answer1: answer1,
       answer2: answer2,
       answer3: answer3,
-      answer4: answer4);
+      answer4: answer4,
+      hint: hint);
   }
   
   bool equals(Object other) {
@@ -153,7 +159,8 @@ class SingleChoiceQuestion extends Model {
       _answer1 == other._answer1 &&
       _answer2 == other._answer2 &&
       _answer3 == other._answer3 &&
-      _answer4 == other._answer4;
+      _answer4 == other._answer4 &&
+      _hint == other._hint;
   }
   
   @override
@@ -178,6 +185,7 @@ class SingleChoiceQuestion extends Model {
     buffer.write("answer2=" + "$_answer2" + ", ");
     buffer.write("answer3=" + "$_answer3" + ", ");
     buffer.write("answer4=" + "$_answer4" + ", ");
+    buffer.write("hint=" + "$_hint" + ", ");
     buffer.write("createdAt=" + (_createdAt != null ? _createdAt!.format() : "null") + ", ");
     buffer.write("updatedAt=" + (_updatedAt != null ? _updatedAt!.format() : "null"));
     buffer.write("}");
@@ -185,7 +193,7 @@ class SingleChoiceQuestion extends Model {
     return buffer.toString();
   }
   
-  SingleChoiceQuestion copyWith({String? id, String? key, String? title, String? image, String? equation, String? description, String? question, int? numberOfAnswers, int? correctAnswer, String? answer0, String? answer1, String? answer2, String? answer3, String? answer4}) {
+  SingleChoiceQuestion copyWith({String? id, String? key, String? title, String? image, String? equation, String? description, String? question, int? numberOfAnswers, int? correctAnswer, String? answer0, String? answer1, String? answer2, String? answer3, String? answer4, String? hint}) {
     return SingleChoiceQuestion._internal(
       id: id ?? this.id,
       key: key ?? this.key,
@@ -200,7 +208,8 @@ class SingleChoiceQuestion extends Model {
       answer1: answer1 ?? this.answer1,
       answer2: answer2 ?? this.answer2,
       answer3: answer3 ?? this.answer3,
-      answer4: answer4 ?? this.answer4);
+      answer4: answer4 ?? this.answer4,
+      hint: hint ?? this.hint);
   }
   
   SingleChoiceQuestion.fromJson(Map<String, dynamic> json)  
@@ -218,11 +227,12 @@ class SingleChoiceQuestion extends Model {
       _answer2 = json['answer2'],
       _answer3 = json['answer3'],
       _answer4 = json['answer4'],
+      _hint = json['hint'],
       _createdAt = json['createdAt'] != null ? TemporalDateTime.fromString(json['createdAt']) : null,
       _updatedAt = json['updatedAt'] != null ? TemporalDateTime.fromString(json['updatedAt']) : null;
   
   Map<String, dynamic> toJson() => {
-    'id': id, 'key': _key, 'title': _title, 'image': _image, 'equation': _equation, 'description': _description, 'question': _question, 'numberOfAnswers': _numberOfAnswers, 'correctAnswer': _correctAnswer, 'answer0': _answer0, 'answer1': _answer1, 'answer2': _answer2, 'answer3': _answer3, 'answer4': _answer4, 'createdAt': _createdAt?.format(), 'updatedAt': _updatedAt?.format()
+    'id': id, 'key': _key, 'title': _title, 'image': _image, 'equation': _equation, 'description': _description, 'question': _question, 'numberOfAnswers': _numberOfAnswers, 'correctAnswer': _correctAnswer, 'answer0': _answer0, 'answer1': _answer1, 'answer2': _answer2, 'answer3': _answer3, 'answer4': _answer4, 'hint': _hint, 'createdAt': _createdAt?.format(), 'updatedAt': _updatedAt?.format()
   };
 
   static final QueryField ID = QueryField(fieldName: "id");
@@ -239,6 +249,7 @@ class SingleChoiceQuestion extends Model {
   static final QueryField ANSWER2 = QueryField(fieldName: "answer2");
   static final QueryField ANSWER3 = QueryField(fieldName: "answer3");
   static final QueryField ANSWER4 = QueryField(fieldName: "answer4");
+  static final QueryField HINT = QueryField(fieldName: "hint");
   static var schema = Model.defineSchema(define: (ModelSchemaDefinition modelSchemaDefinition) {
     modelSchemaDefinition.name = "SingleChoiceQuestion";
     modelSchemaDefinition.pluralName = "SingleChoiceQuestions";
@@ -330,6 +341,12 @@ class SingleChoiceQuestion extends Model {
     
     modelSchemaDefinition.addField(ModelFieldDefinition.field(
       key: SingleChoiceQuestion.ANSWER4,
+      isRequired: false,
+      ofType: ModelFieldType(ModelFieldTypeEnum.string)
+    ));
+    
+    modelSchemaDefinition.addField(ModelFieldDefinition.field(
+      key: SingleChoiceQuestion.HINT,
       isRequired: false,
       ofType: ModelFieldType(ModelFieldTypeEnum.string)
     ));

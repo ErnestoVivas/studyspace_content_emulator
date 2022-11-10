@@ -34,7 +34,7 @@ export 'TopicCategories.dart';
 
 class ModelProvider implements ModelProviderInterface {
   @override
-  String version = "8d318467aa39060900babe6c40de0c50";
+  String version = "ebef2805e7825bfb938ab3bffa4d1b45";
   @override
   List<ModelSchema> modelSchemas = [DisplayElement.schema, SingleChoiceQuestion.schema, Subtopic.schema, Topic.schema];
   static final ModelProvider _instance = ModelProvider();
