@@ -175,12 +175,27 @@ class _OverviewPageState extends State<OverviewPage> {
     String valueStr = _displayElements[currentPage][elementIndex].value ?? '';
     debugPrint(valueStr);
     valueStr = valueStr.replaceAll(r'\n', '\n');
-    if(valueStr[0] == '"') {
+    valueStr = valueStr.replaceAll(r'"""', '');
+    if((valueStr.length > 0) && (valueStr.substring(0) == '"')) {
       valueStr = valueStr.substring(1);
     }
-    if(valueStr[valueStr.length-1] == '"') {
-      valueStr = valueStr.substring(0, valueStr.length-1);
+    if((valueStr.length > 1) && (valueStr[valueStr.length-1] == '"')) {
+      valueStr = valueStr.substring(0, valueStr.length-2);
     }
+
+    // trim leading / trailing ""
+    /*
+    if((valueStr.length > 3) && (valueStr.substring(0, 2) == '"""')) {
+      valueStr = valueStr.substring(3);
+    } else if((valueStr.length > 0) && (valueStr.substring(0) == '"')) {
+      valueStr = valueStr.substring(1);
+    }
+    if((valueStr.length > 3) && (valueStr.substring(valueStr.length-3, valueStr.length-1) == '"""')) {
+      valueStr = valueStr.substring(0, valueStr.length-4);
+    } else if((valueStr.length > 1) && (valueStr[valueStr.length-1] == '"')) {
+      valueStr = valueStr.substring(0, valueStr.length-2);
+    }*/
+
     if(_displayElements[currentPage][elementIndex].type == 0) {
       contentWidget = Text(
         valueStr,

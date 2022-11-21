@@ -113,7 +113,16 @@ class _MyHomePageState extends State<MyHomePage> {
       int i = 0;
       for(String row in rows) {
         print('Row ${++i}');
-        List<dynamic> rowElements = row.split('\t');
+        List<dynamic> rowElements = row.split(',');
+        print('Row length: ${rowElements.length}');
+
+        // glue falsely splitted value string back together
+        if(rowElements.length > 8) {
+          for(int i = 6; i < (rowElements.length - 2); ++i) {
+            rowElements[5] = rowElements[5] + ',' + rowElements[i];
+          }
+        }
+
         if(rowElements.length > 1) {
           displayElementsCSV.add(rowElements);
         }
@@ -123,7 +132,6 @@ class _MyHomePageState extends State<MyHomePage> {
       for(int i = 1; i < displayElementsCSV.length; ++i) {
         if(displayElementsCSV[i].length > 5) {
           DisplayElement newDisplayElement = DisplayElement(
-            id: displayElementsCSV[i][0] as String,
             key: displayElementsCSV[i][1] as String,
             page: int.parse(displayElementsCSV[i][2]),
             index: int.parse(displayElementsCSV[i][3]),
@@ -151,8 +159,9 @@ class _MyHomePageState extends State<MyHomePage> {
       int i = 0;
       for (String row in rows) {
         if(i > 0) {
-          List<dynamic> rowElements = row.split('\t');
+          List<dynamic> rowElements = row.split(',');
           if (rowElements.length > 12) {
+
             SingleChoiceQuestion newSCQuestion = SingleChoiceQuestion(
               key: rowElements[1],
               title: rowElements[2] ?? '',
