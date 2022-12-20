@@ -1,3 +1,4 @@
 id	key	title	image	equation	description	question	numberOfAnswers	correctAnswer	answer0	answer1	answer2	answer3	answer4	hint	CRLF
-Mathe-Analysis-Extrempunkte-basics-set0-question0	0/0/0/basics/0/0	Extrempunkte	na	f(x) = -x^2	na	Die Parabel besitzt einen Extrempunkt. Handelt es sich um einen Hoch- oder Tiefpunkt?	3	0	Hochpunkt	Tiefpunkt	Nicht genügend Informationen	na	na	na	CRLF
-Mathe-Analysis-Extrempunkte-basics-set0-question1	0/0/0/basics/0/1	Tiefpunkt	na	3(x+2)^2	na	Die Parabel besitzt einen Tiefpunkt. Bei welcher Stelle liegt dieser?	4	1	$x = 2$	$x = -2$	$x = -3$	$x = 0$	na	na	CRLF
+<automatic>	0/0/0/basics/0/0	Extrempunkte	na	f(x) = -x^2	na	Die Parabel besitzt einen Extrempunkt. Handelt es sich um einen Hoch- oder Tiefpunkt?	3	0	Hochpunkt	Tiefpunkt	Nicht genügend Informationen	na	na	na	CRLF
+<automatic>	0/0/0/basics/0/1	Tiefpunkt	na	3(x+2)^2	na	Die Parabel besitzt einen Tiefpunkt. Bei welcher Stelle liegt dieser?	4	1	$x = 2$	$x = -2$	$x = -3$	$x = 0$	na	na	CRLF
+<automatic>	0/0/0/basics/0/2	Notwendige Bedingung	na	h(x) = -3x^3+2x^2 – 1	na	Wie lautet die notwendige Bedingung zur Berechnung der Extrempunkte von h?	4	1	$-3x^3+2x^2 – 1 = 0$	$-9x^2+4x = 0$	$-18x + 4 = 0$	$y = h’(0)$	na	na	CRLF

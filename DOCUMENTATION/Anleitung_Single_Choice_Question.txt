@@ -10,7 +10,7 @@ Spalten (Attribute) pro Single Choice Frage:
 - image: [String] Dateipfad zu Bild im S3 Bucket (studylib/<subject_key>/<topic_key>/<subtopic_key>/<exercise_type>/image_filename) (optional)  
 - equation: [String] Mathematischer Latex-Ausdruck (optional)
 - description: [String] Ausführliche Beschreibung des Problems (optional)
-- question: [int] Frage (Pflichtfeld)
+- question: [String] Frage (Pflichtfeld)
 - numberOfAnswers: [int] (Wert zwischen 2 und 5) (Pflichtfeld)
 - correctAnswer: [int] (0,...,4) (Pflichtfeld)
 - answer0 [String] (Pflichtfeld)
@@ -28,7 +28,7 @@ z.B. $f(x) = y$.
 
 2) Für description, question und hint dürfen Text und Gleichungen gemischt werden. Dabei Gleichungen müssen zwischen $-Zeichen gesetzt werden.
 
-3) 'optional' bedeutet, dass die Spalte leer sein darf (sie muss jedoch existieren).
+3) 'optional' bedeutet, dass die Spalte nicht unbedingt genutzt werden muss (sie muss jedoch existieren). Die Spalte darf nicht leer sein; sollte die Spalte nicht genutzt werden, so soll 'na' angegeben werden (die App erkennt dies und ignoriert die Spalte entsprechend).
 
 4) Die letzte Spalte muss stets 'CRLF' sein.
 
