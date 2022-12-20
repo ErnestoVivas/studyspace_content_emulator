@@ -23,17 +23,13 @@ import 'package:amplify_core/amplify_core.dart';
 import 'package:flutter/foundation.dart';
 
 
-/** This is an auto generated class representing the DisplayElement type in your schema. */
+/** This is an auto generated class representing the ValidUser type in your schema. */
 @immutable
-class DisplayElement extends Model {
-  static const classType = const _DisplayElementModelType();
+class ValidUser extends Model {
+  static const classType = const _ValidUserModelType();
   final String id;
-  final String? _key;
-  final int? _page;
-  final int? _index;
-  final int? _type;
-  final String? _value;
-  final bool? _lk;
+  final String? _username;
+  final bool? _hasAccount;
   final TemporalDateTime? _createdAt;
   final TemporalDateTime? _updatedAt;
 
@@ -45,28 +41,12 @@ class DisplayElement extends Model {
     return id;
   }
   
-  String? get key {
-    return _key;
+  String? get username {
+    return _username;
   }
   
-  int? get page {
-    return _page;
-  }
-  
-  int? get index {
-    return _index;
-  }
-  
-  int? get type {
-    return _type;
-  }
-  
-  String? get value {
-    return _value;
-  }
-  
-  bool? get lk {
-    return _lk;
+  bool? get hasAccount {
+    return _hasAccount;
   }
   
   TemporalDateTime? get createdAt {
@@ -77,17 +57,13 @@ class DisplayElement extends Model {
     return _updatedAt;
   }
   
-  const DisplayElement._internal({required this.id, key, page, index, type, value, lk, createdAt, updatedAt}): _key = key, _page = page, _index = index, _type = type, _value = value, _lk = lk, _createdAt = createdAt, _updatedAt = updatedAt;
+  const ValidUser._internal({required this.id, username, hasAccount, createdAt, updatedAt}): _username = username, _hasAccount = hasAccount, _createdAt = createdAt, _updatedAt = updatedAt;
   
-  factory DisplayElement({String? id, String? key, int? page, int? index, int? type, String? value, bool? lk}) {
-    return DisplayElement._internal(
+  factory ValidUser({String? id, String? username, bool? hasAccount}) {
+    return ValidUser._internal(
       id: id == null ? UUID.getUUID() : id,
-      key: key,
-      page: page,
-      index: index,
-      type: type,
-      value: value,
-      lk: lk);
+      username: username,
+      hasAccount: hasAccount);
   }
   
   bool equals(Object other) {
@@ -97,14 +73,10 @@ class DisplayElement extends Model {
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is DisplayElement &&
+    return other is ValidUser &&
       id == other.id &&
-      _key == other._key &&
-      _page == other._page &&
-      _index == other._index &&
-      _type == other._type &&
-      _value == other._value &&
-      _lk == other._lk;
+      _username == other._username &&
+      _hasAccount == other._hasAccount;
   }
   
   @override
@@ -114,14 +86,10 @@ class DisplayElement extends Model {
   String toString() {
     var buffer = new StringBuffer();
     
-    buffer.write("DisplayElement {");
+    buffer.write("ValidUser {");
     buffer.write("id=" + "$id" + ", ");
-    buffer.write("key=" + "$_key" + ", ");
-    buffer.write("page=" + (_page != null ? _page!.toString() : "null") + ", ");
-    buffer.write("index=" + (_index != null ? _index!.toString() : "null") + ", ");
-    buffer.write("type=" + (_type != null ? _type!.toString() : "null") + ", ");
-    buffer.write("value=" + "$_value" + ", ");
-    buffer.write("lk=" + (_lk != null ? _lk!.toString() : "null") + ", ");
+    buffer.write("username=" + "$_username" + ", ");
+    buffer.write("hasAccount=" + (_hasAccount != null ? _hasAccount!.toString() : "null") + ", ");
     buffer.write("createdAt=" + (_createdAt != null ? _createdAt!.format() : "null") + ", ");
     buffer.write("updatedAt=" + (_updatedAt != null ? _updatedAt!.format() : "null"));
     buffer.write("}");
@@ -129,46 +97,34 @@ class DisplayElement extends Model {
     return buffer.toString();
   }
   
-  DisplayElement copyWith({String? id, String? key, int? page, int? index, int? type, String? value, bool? lk}) {
-    return DisplayElement._internal(
+  ValidUser copyWith({String? id, String? username, bool? hasAccount}) {
+    return ValidUser._internal(
       id: id ?? this.id,
-      key: key ?? this.key,
-      page: page ?? this.page,
-      index: index ?? this.index,
-      type: type ?? this.type,
-      value: value ?? this.value,
-      lk: lk ?? this.lk);
+      username: username ?? this.username,
+      hasAccount: hasAccount ?? this.hasAccount);
   }
   
-  DisplayElement.fromJson(Map<String, dynamic> json)  
+  ValidUser.fromJson(Map<String, dynamic> json)  
     : id = json['id'],
-      _key = json['key'],
-      _page = (json['page'] as num?)?.toInt(),
-      _index = (json['index'] as num?)?.toInt(),
-      _type = (json['type'] as num?)?.toInt(),
-      _value = json['value'],
-      _lk = json['lk'],
+      _username = json['username'],
+      _hasAccount = json['hasAccount'],
       _createdAt = json['createdAt'] != null ? TemporalDateTime.fromString(json['createdAt']) : null,
       _updatedAt = json['updatedAt'] != null ? TemporalDateTime.fromString(json['updatedAt']) : null;
   
   Map<String, dynamic> toJson() => {
-    'id': id, 'key': _key, 'page': _page, 'index': _index, 'type': _type, 'value': _value, 'lk': _lk, 'createdAt': _createdAt?.format(), 'updatedAt': _updatedAt?.format()
+    'id': id, 'username': _username, 'hasAccount': _hasAccount, 'createdAt': _createdAt?.format(), 'updatedAt': _updatedAt?.format()
   };
   
   Map<String, Object?> toMap() => {
-    'id': id, 'key': _key, 'page': _page, 'index': _index, 'type': _type, 'value': _value, 'lk': _lk, 'createdAt': _createdAt, 'updatedAt': _updatedAt
+    'id': id, 'username': _username, 'hasAccount': _hasAccount, 'createdAt': _createdAt, 'updatedAt': _updatedAt
   };
 
   static final QueryField ID = QueryField(fieldName: "id");
-  static final QueryField KEY = QueryField(fieldName: "key");
-  static final QueryField PAGE = QueryField(fieldName: "page");
-  static final QueryField INDEX = QueryField(fieldName: "index");
-  static final QueryField TYPE = QueryField(fieldName: "type");
-  static final QueryField VALUE = QueryField(fieldName: "value");
-  static final QueryField LK = QueryField(fieldName: "lk");
+  static final QueryField USERNAME = QueryField(fieldName: "username");
+  static final QueryField HASACCOUNT = QueryField(fieldName: "hasAccount");
   static var schema = Model.defineSchema(define: (ModelSchemaDefinition modelSchemaDefinition) {
-    modelSchemaDefinition.name = "DisplayElement";
-    modelSchemaDefinition.pluralName = "DisplayElements";
+    modelSchemaDefinition.name = "ValidUser";
+    modelSchemaDefinition.pluralName = "ValidUsers";
     
     modelSchemaDefinition.authRules = [
       AuthRule(
@@ -184,37 +140,13 @@ class DisplayElement extends Model {
     modelSchemaDefinition.addField(ModelFieldDefinition.id());
     
     modelSchemaDefinition.addField(ModelFieldDefinition.field(
-      key: DisplayElement.KEY,
+      key: ValidUser.USERNAME,
       isRequired: false,
       ofType: ModelFieldType(ModelFieldTypeEnum.string)
     ));
     
     modelSchemaDefinition.addField(ModelFieldDefinition.field(
-      key: DisplayElement.PAGE,
-      isRequired: false,
-      ofType: ModelFieldType(ModelFieldTypeEnum.int)
-    ));
-    
-    modelSchemaDefinition.addField(ModelFieldDefinition.field(
-      key: DisplayElement.INDEX,
-      isRequired: false,
-      ofType: ModelFieldType(ModelFieldTypeEnum.int)
-    ));
-    
-    modelSchemaDefinition.addField(ModelFieldDefinition.field(
-      key: DisplayElement.TYPE,
-      isRequired: false,
-      ofType: ModelFieldType(ModelFieldTypeEnum.int)
-    ));
-    
-    modelSchemaDefinition.addField(ModelFieldDefinition.field(
-      key: DisplayElement.VALUE,
-      isRequired: false,
-      ofType: ModelFieldType(ModelFieldTypeEnum.string)
-    ));
-    
-    modelSchemaDefinition.addField(ModelFieldDefinition.field(
-      key: DisplayElement.LK,
+      key: ValidUser.HASACCOUNT,
       isRequired: false,
       ofType: ModelFieldType(ModelFieldTypeEnum.bool)
     ));
@@ -235,11 +167,11 @@ class DisplayElement extends Model {
   });
 }
 
-class _DisplayElementModelType extends ModelType<DisplayElement> {
-  const _DisplayElementModelType();
+class _ValidUserModelType extends ModelType<ValidUser> {
+  const _ValidUserModelType();
   
   @override
-  DisplayElement fromJson(Map<String, dynamic> jsonData) {
-    return DisplayElement.fromJson(jsonData);
+  ValidUser fromJson(Map<String, dynamic> jsonData) {
+    return ValidUser.fromJson(jsonData);
   }
 }

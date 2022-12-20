@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:studyspace_content_emulator/models/ModelProvider.dart';
+import 'package:studyspace_app_emulator/models/ModelProvider.dart';
 
 import 'package:katex_flutter/katex_flutter.dart';
 import 'package:flutter_math_fork/flutter_math.dart';

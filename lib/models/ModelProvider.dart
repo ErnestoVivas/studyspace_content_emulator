@@ -24,6 +24,7 @@ import 'DisplayElement.dart';
 import 'SingleChoiceQuestion.dart';
 import 'Subtopic.dart';
 import 'Topic.dart';
+import 'ValidUser.dart';
 import 'TopicCategories.dart';
 
 export 'DisplayElement.dart';
@@ -31,12 +32,13 @@ export 'SingleChoiceQuestion.dart';
 export 'Subtopic.dart';
 export 'Topic.dart';
 export 'TopicCategories.dart';
+export 'ValidUser.dart';
 
 class ModelProvider implements ModelProviderInterface {
   @override
-  String version = "ebef2805e7825bfb938ab3bffa4d1b45";
+  String version = "4f2f1a9f6ef6a982375c20649ad9540e";
   @override
-  List<ModelSchema> modelSchemas = [DisplayElement.schema, SingleChoiceQuestion.schema, Subtopic.schema, Topic.schema];
+  List<ModelSchema> modelSchemas = [DisplayElement.schema, SingleChoiceQuestion.schema, Subtopic.schema, Topic.schema, ValidUser.schema];
   static final ModelProvider _instance = ModelProvider();
   @override
   List<ModelSchema> customTypeSchemas = [TopicCategories.schema];
@@ -53,6 +55,8 @@ class ModelProvider implements ModelProviderInterface {
         return Subtopic.classType;
       case "Topic":
         return Topic.classType;
+      case "ValidUser":
+        return ValidUser.classType;
       default:
         throw Exception("Failed to find model in model provider for model name: " + modelName);
     }

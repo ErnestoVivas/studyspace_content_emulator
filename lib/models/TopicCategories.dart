@@ -205,6 +205,10 @@ class TopicCategories {
   Map<String, dynamic> toJson() => {
     'grade5': _grade5, 'grade6': _grade6, 'grade7': _grade7, 'grade8': _grade8, 'grade9': _grade9, 'grade10': _grade10, 'grade11': _grade11, 'grade12': _grade12, 'grade13': _grade13, 'realschule': _realschule, 'gesamtschule': _gesamtschule, 'gymnasium': _gymnasium, 'GK': _GK, 'LK': _LK
   };
+  
+  Map<String, Object?> toMap() => {
+    'grade5': _grade5, 'grade6': _grade6, 'grade7': _grade7, 'grade8': _grade8, 'grade9': _grade9, 'grade10': _grade10, 'grade11': _grade11, 'grade12': _grade12, 'grade13': _grade13, 'realschule': _realschule, 'gesamtschule': _gesamtschule, 'gymnasium': _gymnasium, 'GK': _GK, 'LK': _LK
+  };
 
   static var schema = Model.defineSchema(define: (ModelSchemaDefinition modelSchemaDefinition) {
     modelSchemaDefinition.name = "TopicCategories";

@@ -234,6 +234,10 @@ class SingleChoiceQuestion extends Model {
   Map<String, dynamic> toJson() => {
     'id': id, 'key': _key, 'title': _title, 'image': _image, 'equation': _equation, 'description': _description, 'question': _question, 'numberOfAnswers': _numberOfAnswers, 'correctAnswer': _correctAnswer, 'answer0': _answer0, 'answer1': _answer1, 'answer2': _answer2, 'answer3': _answer3, 'answer4': _answer4, 'hint': _hint, 'createdAt': _createdAt?.format(), 'updatedAt': _updatedAt?.format()
   };
+  
+  Map<String, Object?> toMap() => {
+    'id': id, 'key': _key, 'title': _title, 'image': _image, 'equation': _equation, 'description': _description, 'question': _question, 'numberOfAnswers': _numberOfAnswers, 'correctAnswer': _correctAnswer, 'answer0': _answer0, 'answer1': _answer1, 'answer2': _answer2, 'answer3': _answer3, 'answer4': _answer4, 'hint': _hint, 'createdAt': _createdAt, 'updatedAt': _updatedAt
+  };
 
   static final QueryField ID = QueryField(fieldName: "id");
   static final QueryField KEY = QueryField(fieldName: "key");

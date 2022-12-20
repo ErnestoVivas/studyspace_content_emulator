@@ -1,0 +1,614 @@
+<h1>Zusammenfassung</h1>
+
+<h3>Motivation</h3>
+<p>
+Das Berechnen von Extremwerten ist im Abitur ein wichtiges Thema beim Untersuchen von Funktionen.
+Es ist in den letzten Jahren immer vorgekommen. Hier kannst du dir also viele Punkte sichern.
+</p>
+
+<h3>Einführung</h3>
+<h4>Definition</h4>
+<p>
+Unter den <b>Extremwerten</b> werden die <b>Hoch- bzw. Tiefpunkte</b> einer Funktion verstanden.
+Doch was sind eigentlich Hoch-/Tiefpunkte?<br>
+Dazu hilft es, sich Funktionen als Gebirgsprofile vorzustellen. Wir sehen Berge und Täler.
+Die <b>Berge</b> werden <b>Hochpunkte</b> genannt.<br>
+Die <b>Täler</b> werden <b>Tiefpunkte</b> genannt.<br>
+Vielleicht hast du auch schon einmal die Begriffe lokal und global gehört. Diese verstehen wir so:<br>
+Der <b>höchste</b> Berg wird <b>globaler</b> Hochpunkt genannt. Alle anderen Berge nennen wir <b>lokale</b> Hochpunkte.<br>
+Das <b>tiefste</b> Tal wird <b>globaler</b> Tiefpunkt genannt. Alle anderem Täler nennen wir <b>lokale</b> Tiefpunkte.
+In der Abbildung kannst du dir das noch einmal genau anschauen:<br><br></p>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   style="display:block;"
+   viewBox="0 0 267.42932 225.33733"
+   height="225.33733"
+   width="267.42932"
+   xml:space="preserve"
+   id="svg2"
+   version="1.1"><metadata
+     id="metadata8"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+     id="defs6"><clipPath
+       id="clipPath332"
+       clipPathUnits="userSpaceOnUse"><path
+         id="path330"
+         d="M 0,0 H 194.27124 V 161.39664 H 0 Z" /></clipPath></defs><g
+     transform="matrix(1.3333333,0,0,-1.3333333,0,225.33733)"
+     id="g10"><g
+       transform="translate(3.269,4.574)"
+       id="g12"><g
+         id="g14"><g
+           id="g16"><g
+             id="g18" /><g
+             id="g20" /><g
+             id="g22"><g
+               id="g24" /></g><g
+             id="g26" /><g
+             id="g28" /><g
+             id="g30" /><g
+             id="g32" /><g
+             transform="translate(-0.434,-1.739)"
+             id="g34"><g
+               transform="translate(0.434,1.739)"
+               id="g36"><g
+                 id="g38"><g
+                   id="g40"><g
+                     id="g42"><g
+                       id="g44"><g
+                         id="g46"><path
+                           id="path48"
+                           style="fill:none;stroke:#808080;stroke-width:0.19925;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                           d="m 9.251,107.20691 v 4.25256 m 23.12754,-4.25256 v 4.25256 m 23.12752,-4.25256 v 4.25256 m 23.12753,-4.25256 v 4.25256 m 46.25507,-4.25256 v 4.25256 m 23.12753,-4.25256 v 4.25256 m 23.12751,-4.25256 v 4.25256" /></g></g><g
+                       id="g50"><g
+                         id="g52"><path
+                           id="path54"
+                           style="fill:none;stroke:#808080;stroke-width:0.19925;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                           d="m 99.63525,5.20633 h 4.25173 m -4.25173,26.03172 h 4.25173 m -4.25173,26.03171 h 4.25173 m -4.25173,26.03172 h 4.25173 m -4.25173,52.06343 h 4.25173" /></g></g><path
+                       id="path56"
+                       style="fill:none;stroke:#000000;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                       d="M 0,109.3332 H 192.27872" /><g
+                       transform="translate(192.27872,109.3332)"
+                       id="g58"><g
+                         id="g60"><path
+                           id="path62"
+                           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                           d="M 1.99252,0 -1.19551,1.59401 0,0 -1.19551,-1.59401" /></g></g><path
+                       id="path64"
+                       style="fill:none;stroke:#000000;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                       d="M 101.76112,0 V 159.40411" /><g
+                       transform="rotate(90,-28.821495,130.58261)"
+                       id="g66"><g
+                         id="g68"><path
+                           id="path70"
+                           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                           d="M 1.99252,0 -1.19551,1.59401 0,0 -1.19551,-1.59401" /></g></g><g
+                       id="g72"><g
+                         transform="translate(2.886,97.266)"
+                         id="g74"><g
+                           id="g76"><g
+                             transform="translate(-6.155,-101.84)"
+                             id="g78"><text
+                               id="text82"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMSY10;-inkscape-font-specification:CMSY10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,6.155,101.84)"><tspan
+                                 id="tspan80"
+                                 y="0"
+                                 x="0">−</tspan></text>
+<text
+                               id="text86"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,13.904,101.84)"><tspan
+                                 id="tspan84"
+                                 y="0"
+                                 x="0">2</tspan></text>
+<g
+                               transform="translate(6.155,101.84)"
+                               id="g88" /></g></g><g
+                           transform="translate(-2.886,-97.266)"
+                           id="g90" /></g></g><g
+                       id="g92"><g
+                         transform="translate(22.139,97.266)"
+                         id="g94"><g
+                           id="g96"><g
+                             transform="translate(-25.408,-101.84)"
+                             id="g98"><text
+                               id="text102"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMSY10;-inkscape-font-specification:CMSY10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,25.408,101.84)"><tspan
+                                 id="tspan100"
+                                 y="0"
+                                 x="0">−</tspan></text>
+<text
+                               id="text106"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,33.157,101.84)"><tspan
+                                 id="tspan104"
+                                 y="0"
+                                 x="0">1</tspan></text>
+<text
+                               id="text110"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMMI10;-inkscape-font-specification:CMMI10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,38.138,101.84)"><tspan
+                                 id="tspan108"
+                                 y="0"
+                                 x="0">.</tspan></text>
+<text
+                               id="text114"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,40.905,101.84)"><tspan
+                                 id="tspan112"
+                                 y="0"
+                                 x="0">5</tspan></text>
+<g
+                               transform="translate(25.408,101.84)"
+                               id="g116" /></g></g><g
+                           transform="translate(-22.139,-97.266)"
+                           id="g118" /></g></g><g
+                       id="g120"><g
+                         transform="translate(49.141,97.266)"
+                         id="g122"><g
+                           id="g124"><g
+                             transform="translate(-52.41,-101.84)"
+                             id="g126"><text
+                               id="text130"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMSY10;-inkscape-font-specification:CMSY10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,52.41,101.84)"><tspan
+                                 id="tspan128"
+                                 y="0"
+                                 x="0">−</tspan></text>
+<text
+                               id="text134"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,60.158,101.84)"><tspan
+                                 id="tspan132"
+                                 y="0"
+                                 x="0">1</tspan></text>
+<g
+                               transform="translate(52.41,101.84)"
+                               id="g136" /></g></g><g
+                           transform="translate(-49.141,-97.266)"
+                           id="g138" /></g></g><g
+                       id="g140"><g
+                         transform="translate(68.393,97.266)"
+                         id="g142"><g
+                           id="g144"><g
+                             transform="translate(-71.662,-101.84)"
+                             id="g146"><text
+                               id="text150"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMSY10;-inkscape-font-specification:CMSY10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,71.662,101.84)"><tspan
+                                 id="tspan148"
+                                 y="0"
+                                 x="0">−</tspan></text>
+<text
+                               id="text154"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,79.411,101.84)"><tspan
+                                 id="tspan152"
+                                 y="0"
+                                 x="0">0</tspan></text>
+<text
+                               id="text158"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMMI10;-inkscape-font-specification:CMMI10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,84.393,101.84)"><tspan
+                                 id="tspan156"
+                                 y="0"
+                                 x="0">.</tspan></text>
+<text
+                               id="text162"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,87.16,101.84)"><tspan
+                                 id="tspan160"
+                                 y="0"
+                                 x="0">5</tspan></text>
+<g
+                               transform="translate(71.662,101.84)"
+                               id="g164" /></g></g><g
+                           transform="translate(-68.393,-97.266)"
+                           id="g166" /></g></g><g
+                       id="g168"><g
+                         transform="translate(118.522,97.266)"
+                         id="g170"><g
+                           id="g172"><g
+                             transform="translate(-121.791,-101.84)"
+                             id="g174"><text
+                               id="text178"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,121.791,101.84)"><tspan
+                                 id="tspan176"
+                                 y="0"
+                                 x="0">0</tspan></text>
+<text
+                               id="text182"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMMI10;-inkscape-font-specification:CMMI10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,126.773,101.84)"><tspan
+                                 id="tspan180"
+                                 y="0"
+                                 x="0">.</tspan></text>
+<text
+                               id="text186"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,129.54,101.84)"><tspan
+                                 id="tspan184"
+                                 y="0"
+                                 x="0">5</tspan></text>
+<g
+                               transform="translate(121.791,101.84)"
+                               id="g188" /></g></g><g
+                           transform="translate(-118.522,-97.266)"
+                           id="g190" /></g></g><g
+                       id="g192"><g
+                         transform="translate(145.524,97.266)"
+                         id="g194"><g
+                           id="g196"><g
+                             transform="translate(-148.793,-101.84)"
+                             id="g198"><text
+                               id="text202"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,148.793,101.84)"><tspan
+                                 id="tspan200"
+                                 y="0"
+                                 x="0">1</tspan></text>
+<g
+                               transform="translate(148.793,101.84)"
+                               id="g204" /></g></g><g
+                           transform="translate(-145.524,-97.266)"
+                           id="g206" /></g></g><g
+                       id="g208"><g
+                         transform="translate(164.777,97.266)"
+                         id="g210"><g
+                           id="g212"><g
+                             transform="translate(-168.046,-101.84)"
+                             id="g214"><text
+                               id="text218"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,168.046,101.84)"><tspan
+                                 id="tspan216"
+                                 y="0"
+                                 x="0">1</tspan></text>
+<text
+                               id="text222"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMMI10;-inkscape-font-specification:CMMI10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,173.027,101.84)"><tspan
+                                 id="tspan220"
+                                 y="0"
+                                 x="0">.</tspan></text>
+<text
+                               id="text226"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,175.794,101.84)"><tspan
+                                 id="tspan224"
+                                 y="0"
+                                 x="0">5</tspan></text>
+<g
+                               transform="translate(168.046,101.84)"
+                               id="g228" /></g></g><g
+                           transform="translate(-164.777,-97.266)"
+                           id="g230" /></g></g><g
+                       id="g232"><g
+                         transform="translate(83.384,2.411)"
+                         id="g234"><g
+                           id="g236"><g
+                             transform="translate(-86.653,-6.985)"
+                             id="g238"><text
+                               id="text242"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMSY10;-inkscape-font-specification:CMSY10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,86.653,6.985)"><tspan
+                                 id="tspan240"
+                                 y="0"
+                                 x="0">−</tspan></text>
+<text
+                               id="text246"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,94.402,6.985)"><tspan
+                                 id="tspan244"
+                                 y="0"
+                                 x="0">4</tspan></text>
+<g
+                               transform="translate(86.653,6.985)"
+                               id="g248" /></g></g><g
+                           transform="translate(-83.384,-2.411)"
+                           id="g250" /></g></g><g
+                       id="g252"><g
+                         transform="translate(83.384,28.443)"
+                         id="g254"><g
+                           id="g256"><g
+                             transform="translate(-86.653,-33.017)"
+                             id="g258"><text
+                               id="text262"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMSY10;-inkscape-font-specification:CMSY10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,86.653,33.017)"><tspan
+                                 id="tspan260"
+                                 y="0"
+                                 x="0">−</tspan></text>
+<text
+                               id="text266"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,94.402,33.017)"><tspan
+                                 id="tspan264"
+                                 y="0"
+                                 x="0">3</tspan></text>
+<g
+                               transform="translate(86.653,33.017)"
+                               id="g268" /></g></g><g
+                           transform="translate(-83.384,-28.443)"
+                           id="g270" /></g></g><g
+                       id="g272"><g
+                         transform="translate(83.384,54.474)"
+                         id="g274"><g
+                           id="g276"><g
+                             transform="translate(-86.653,-59.048)"
+                             id="g278"><text
+                               id="text282"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMSY10;-inkscape-font-specification:CMSY10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,86.653,59.048)"><tspan
+                                 id="tspan280"
+                                 y="0"
+                                 x="0">−</tspan></text>
+<text
+                               id="text286"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,94.402,59.048)"><tspan
+                                 id="tspan284"
+                                 y="0"
+                                 x="0">2</tspan></text>
+<g
+                               transform="translate(86.653,59.048)"
+                               id="g288" /></g></g><g
+                           transform="translate(-83.384,-54.474)"
+                           id="g290" /></g></g><g
+                       id="g292"><g
+                         transform="translate(83.384,80.506)"
+                         id="g294"><g
+                           id="g296"><g
+                             transform="translate(-86.653,-85.08)"
+                             id="g298"><text
+                               id="text302"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMSY10;-inkscape-font-specification:CMSY10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,86.653,85.08)"><tspan
+                                 id="tspan300"
+                                 y="0"
+                                 x="0">−</tspan></text>
+<text
+                               id="text306"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,94.402,85.08)"><tspan
+                                 id="tspan304"
+                                 y="0"
+                                 x="0">1</tspan></text>
+<g
+                               transform="translate(86.653,85.08)"
+                               id="g308" /></g></g><g
+                           transform="translate(-83.384,-80.506)"
+                           id="g310" /></g></g><g
+                       id="g312"><g
+                         transform="translate(91.133,132.153)"
+                         id="g314"><g
+                           id="g316"><g
+                             transform="translate(-94.402,-136.727)"
+                             id="g318"><text
+                               id="text322"
+                               style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,94.402,136.727)"><tspan
+                                 id="tspan320"
+                                 y="0"
+                                 x="0">1</tspan></text>
+<g
+                               transform="translate(94.402,136.727)"
+                               id="g324" /></g></g><g
+                           transform="translate(-91.133,-132.153)"
+                           id="g326" /></g></g><g
+                       clip-path="url(#clipPath332)"
+                       id="g328"><g
+                         id="g334"><path
+                           id="path336"
+                           style="fill:none;stroke:#ff8000;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                           d="m 9.251,161.39664 1.96232,-20.01508 1.96232,-18.1414 1.96231,-16.3602 1.96232,-14.66945 1.96232,-13.06662 1.96231,-11.55046 1.96233,-10.11876 1.96231,-8.76917 1.96231,-7.49964 1.96233,-6.30837 1.96231,-5.19339 1.96232,-4.15242 1.96231,-3.18367 1.96233,-2.285 1.96233,-1.45444 1.96231,-0.68988 1.96232,0.01057 1.96231,0.64905 1.96233,1.22747 1.96231,1.74801 1.96231,2.21263 1.96233,2.62322 1.96231,2.98196 1.96232,3.29082 1.96231,3.55188 1.96232,3.76704 1.96234,3.93853 1.9623,4.0681 1.96233,4.15795 1.96231,4.21015 1.96232,4.22658 1.96234,4.20933 1.9623,4.16045 1.96233,4.08187 1.96231,3.97579 1.96231,3.84398 1.96235,3.68875 1.9623,3.51192 1.96233,3.31553 1.96231,3.1017 1.96231,2.87243 1.96233,2.62962 1.96232,2.37548 1.96233,2.1119 1.96231,1.84096 1.96231,1.56466 1.96233,1.28507 1.96231,1.00415 1.96233,0.72392 1.96232,0.44646 1.96231,0.17383 1.96233,-0.0921 1.96231,-0.34915 1.96233,-0.59538 1.96232,-0.82879 1.96231,-1.04725 1.96233,-1.2488 1.96231,-1.43142 1.96233,-1.5931 1.96232,-1.73186 1.96233,-1.84548 1.96231,-1.93213 1.96231,-1.98972 1.96233,-2.01625 1.96232,-2.00969 1.96233,-1.96796 1.96231,-1.88909 1.96231,-1.77109 1.96233,-1.61185 1.96231,-1.40939 1.96232,-1.16173 1.96233,-0.8667 1.96231,-0.52252 1.96233,-0.12692 1.96231,0.322 1.96232,0.8262 1.96231,1.3879 1.96231,2.00899 1.96233,2.69146 1.96231,3.43744 1.96233,4.24892 1.96231,5.12783 1.96231,6.07633 1.96232,7.09633 1.96232,8.18971 1.96234,9.35913 1.96231,10.60591 1.96231,11.93256 1.96232,13.34058 1.96232,14.83267 1.96232,16.40988 1.96231,18.07538 1.96231,19.83052 1.96233,21.67715 1.96231,23.61814 1.96232,25.65356 1.96232,27.78879 1.96231,30.02342 1.96234,32.35919" /><g
+                           id="g338"><g
+                             transform="translate(118.32,352.418)"
+                             id="g340"><g
+                               id="g342"><g
+                                 transform="translate(-121.589,-356.992)"
+                                 id="g344"><text
+                                   id="text348"
+                                   style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#ff8000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                   transform="matrix(1,0,0,-1,121.589,356.992)"><tspan
+                                   id="tspan346"
+                                   y="0"
+                                   x="0 5.6766896 11.21191 16.747131 22.00539 25.879847 28.647457 33.628757">Funktion</tspan></text>
+<g
+                                   transform="translate(121.589,356.992)"
+                                   id="g350" /></g></g><g
+                               transform="translate(-118.32,-352.418)"
+                               id="g352" /></g></g></g><g
+                         id="g354"><g
+                           id="g356"><g
+                             transform="translate(2.629,4.133)"
+                             id="g358"><g
+                               id="g360"><g
+                                 transform="translate(-5.898,-8.707)"
+                                 id="g362"><text
+                                   id="text366"
+                                   style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                   transform="matrix(1,0,0,-1,5.898,8.707)"><tspan
+                                   id="tspan364"
+                                   y="0"
+                                   x="0 4.9812999 7.7489104 12.73021 18.26543 23.246731 26.014341 30.441721 37.661617 44.856606 47.624218 52.051598 55.096169 60.631386 66.166611 71.701828 76.960091">globalerTiefpunkt</tspan></text>
+<g
+                                   transform="translate(5.898,8.707)"
+                                   id="g368" /></g></g><g
+                               transform="translate(-2.629,-4.133)"
+                               id="g370" /></g></g></g><g
+                         id="g372"><g
+                           id="g374"><g
+                             transform="translate(101.758,126.036)"
+                             id="g376"><g
+                               id="g378"><g
+                                 transform="translate(-105.027,-130.61)"
+                                 id="g380"><text
+                                   id="text384"
+                                   style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                   transform="matrix(1,0,0,-1,105.027,130.61)"><tspan
+                                   id="tspan382"
+                                   y="0"
+                                   x="0 4.9812999 7.7489104 12.73021 18.26543 23.246731 26.014341 30.441721 37.661617 45.133568 50.393818 54.542248 60.077465 65.612686 71.147911 76.683128 81.941391">globalerHochpunkt</tspan></text>
+<g
+                                   transform="translate(105.027,130.61)"
+                                   id="g386" /></g></g><g
+                               transform="translate(-101.758,-126.036)"
+                               id="g388" /></g></g></g><g
+                         id="g390"><g
+                           id="g392"><g
+                             transform="translate(100.854,70.484)"
+                             id="g394"><g
+                               id="g396"><g
+                                 transform="translate(-104.123,-75.058)"
+                                 id="g398"><text
+                                   id="text402"
+                                   style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                   transform="matrix(1,0,0,-1,104.123,75.058)"><tspan
+                                   id="tspan400"
+                                   y="0"
+                                   x="0 2.7676103 7.7489104 12.449265 17.430565 20.198175 24.625555 31.855413 39.050404 41.818012 46.245392 49.289963 54.825184 60.360405 65.895622 71.153885">lokalerTiefpunkt</tspan></text>
+<g
+                                   transform="translate(104.123,75.058)"
+                                   id="g404" /></g></g><g
+                               transform="translate(-100.854,-70.484)"
+                               id="g406" /></g></g></g></g></g><g
+                     id="g408"><path
+                       id="path410"
+                       style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                       d="m 43.6221,17.96185 c 0,1.10048 -0.89209,1.99255 -1.99255,1.99255 -1.10048,0 -1.99255,-0.89207 -1.99255,-1.99255 0,-1.10046 0.89207,-1.99255 1.99255,-1.99255 1.10046,0 1.99255,0.89209 1.99255,1.99255 z" /></g><g
+                     id="g412"><path
+                       id="path414"
+                       style="fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                       d="m 111.57077,111.51985 c 0,1.10047 -0.89207,1.99255 -1.99255,1.99255 -1.10047,0 -1.99256,-0.89208 -1.99256,-1.99255 0,-1.10048 0.89209,-1.99255 1.99256,-1.99255 1.10048,0 1.99255,0.89207 1.99255,1.99255 z" /></g><g
+                     id="g416"><path
+                       id="path418"
+                       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                       d="m 156.0219,81.47926 c 0,1.10048 -0.8921,1.99256 -1.99256,1.99256 -1.10048,0 -1.99255,-0.89208 -1.99255,-1.99256 0,-1.10046 0.89207,-1.99255 1.99255,-1.99255 1.10046,0 1.99256,0.89209 1.99256,1.99255 z" /></g><g
+                     id="g420"><g
+                       transform="translate(185.087,112.869)"
+                       id="g422"><g
+                         id="g424"><g
+                           transform="translate(-188.356,-117.443)"
+                           id="g426"><text
+                             id="text430"
+                             style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMMI10;-inkscape-font-specification:CMMI10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                             transform="matrix(1,0,0,-1,188.356,117.443)"><tspan
+                               id="tspan428"
+                               y="0"
+                               x="0">x</tspan></text>
+<g
+                             transform="translate(188.356,117.443)"
+                             id="g432" /></g></g><g
+                         transform="translate(-185.087,-112.869)"
+                         id="g434" /></g></g><g
+                     id="g436"><g
+                       transform="translate(105.299,153.608)"
+                       id="g438"><g
+                         id="g440"><g
+                           transform="translate(-108.568,-158.182)"
+                           id="g442"><text
+                             id="text446"
+                             style="font-variant:normal;font-weight:normal;font-size:9.96259975px;font-family:CMMI10;-inkscape-font-specification:CMMI10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                             transform="matrix(1,0,0,-1,108.568,158.182)"><tspan
+                               id="tspan444"
+                               y="0"
+                               x="0">y</tspan></text>
+<g
+                             transform="translate(108.568,158.182)"
+                             id="g448" /></g></g><g
+                         transform="translate(-105.299,-153.608)"
+                         id="g450" /></g></g></g></g><g
+                 transform="translate(-0.434,-1.739)"
+                 id="g452" /></g><g
+               transform="translate(0.434,1.739)"
+               id="g454" /></g><g
+             id="g456" /><g
+             id="g458" /></g></g></g></g>
+</svg>
+<br><br><hr>
+<p><br>Bei der Bestimmung von Extremwerten gehst du immer gleich vor.
+Wie es geht siehst du an dem folgenden Beispiel.<br></p>
+<h3>Beispiel</h3>
+<p>Nehmen wir folgende Beispielfunktion:
+\[f(x) = 2x^3-3x^2+5\]Wir wollen die Extrempunkte herausfinden.<br>
+Zuerst bestimmen wir dafür die <b>erste und zweite Ableitung:</b></p>
+<ol>
+<li>\(f'(x) = 6x^2-6x\)
+<li>\(f''(x) = 12x-6\)
+</ol>
+<p><br>Nun gilt es die notwendige Bedingung \(f'(x) = 0\) zu prüfen. Wir setzten die erste Ableitung gleich 0.<br>
+\[0 = 6x^2-6x\]Mit der p-q-Formel oder geschicktem Ausklammern ermitteln wir die Nullstellen.
+\(x_1 = 0\) und \(x_2 = 1\).<br>
+Als nächstes prüfen wir die hinreichende Bedingung \(f''(x) \neq 0\). Wir müssen in diesem Schritt die Nullstellen
+von eben in die zweite Ableitung einsetzen.
+\[
+f''(x_1) = f''(0) = 12(0)-6 = -6 \\
+f''(x_2) = f''(1) = 12(1)-6 = 6
+\]
+Da die beiden Bedingungen erfüllt sind gibt es an den Stellen Extrempunkte. Jetzt müssen wir herausfinden,
+ob es Hochpunkte oder Tiefpunkte sind.<br>
+\(\rightarrow\) Da \(-6 < 0\) liegt bei \(x_1 = 0\) ein Hochpunkt. <br>
+\(\rightarrow\) Da \(6 > 0\) liegt bei \(x_2 = 1\) ein Tiefpunkt.<br><br>
+Als letztes müssen wir noch die \(y\)-Werte der Extrempunkte berechnen.
+Wir setzen dafür \(x_1\) und \(x_2\) in die Funktion \(f(x)\) ein.<br>
+\(\rightarrow f(0) = 2\cdot(0)^3-3\cdot(0)^2+5 = 5\)<br>
+\(\rightarrow f(1) = 2\cdot(1)^3-3\cdot(1)^2+5 = 3\)<br>
+Die gesuchten Punkte lauten also HP(0,5) und TP(1,3).<br><br>
+Nun kennst du die Extrempunkte der Funktion. Auf der nächsten Seite ist eine allgemeine
+Schritt-für-Schritt Anleitung zur Berechnung von Extrempunkten gegeben.<br></p>
+
+NEWPAGE
+
+<h2>Vorgehen</h2>
+<ol>
+<li> Bestimme die erste und zweite Ableitung.</li>
+<li> Bestimme die Nullstellen der ersten Ableitung (<b>notwendige Bedingung</b> \(f'(x) = 0\)). Die Nullstellen nennst du \(x_1, x_2, x_3\) und so weiter.</li>
+<li> Setze die Nullstellen in die zweite Ableitung ein (<b>hinreichende Bedingung</b> \(f''(x) \neq 0\).</li>
+<li> Prüfe, ob die zweite Ableitung positiv oder negativ ist.
+    <ol>
+        <li> Ist sie positiv, liegt ein Tiefpunkt vor.</li>
+        <li> Ist sie negativ, liegt ein Hochpunkt vor.</li>
+    </ol>
+</li>
+<li> Wenn ein Extrem<b>punkt</b> gesucht ist, musst du die \(x\)-Werte nochmal in \(f(x)\) einsetzen. Stelle dann nach \(y\) um.</li>
+<li> Schreibe die Extrempunkte noch einmal nach dem folgenden Schema auf:
+    <ul>
+        <li> Tiefpunkte: T1 (x-Wert, y-Wert), T2 (x-Wert, y-Wert), T3... </li>
+        <li> Hochpunkte: H1 (x-Wert, y-Wert), H2... </li>
+    </ul>
+</li>
+</ol>
+<p>Dann hast du die Aufgabe geschafft.</p>
+<h2>Begrifflichkeiten</h2>
+<p>In der Aufgabenstellungen zu diesem Thema findest du oft Wörter wie Extrem<b>punkte</b>, Extrem<b>stellen</b>
+oder Extrem<b>werte</b>. Es ist sehr wichtig, dass du die Unterschiede zwischen diesen Begriffen kennst,
+damit du das richtige berechnest.
+<ul>
+  <li> Extrem<b>punkte</b> bestehen aus einer x-Koordinate und einer y-Koordinate. Beispiel: (2,3)
+  <li> Extrem<b>stellen</b> bestehen nur aus der x-Koordinate. Beispiel: x = 2
+  <li> Extrem<b>werte</b> bestehen nur aus der y-Koordinate. Beispiel: y = 3
+</ul></p>
+
+<h2>Zusammenfassung</h2>
+<p>Hier findest du nochmal alles Wichtige. Manches davon steht auch in deiner Formelsammlung.</p>
+<h4>Vorgehen</h4>
+<ol>
+  <li> Erste und zweite Ableitung berechnen </li>
+  <li> Notwendige Bedingung: Nullstellen der 1. Ableitung berechnen </li>
+  <li> Hinreichende Bedingung: Nullstellen der 1. Ableitung in die 2. Ableitung einsetzen </li>
+  <li> Falls gesucht: y-Koordinaten der Extrempunkte berechnen </li>
+</ol>
+
+<div class="box">
+<b>Hinweis zu globalen Extrema:</b><br>
+Der höchste Hochpunkt ist der globale Hochpunkt und die flacheren Hochpunkte die lokalen.
+Gibt es nur einen Hochpunkt so ist er der globale Hochpunkt.<br>
+Analog: Der tiefste Tiefpunkt ist der globale Tiefpunkt und die flacheren Tiefpunkte die lokalen.
+Gibt es nur einen Tiefpunkt so ist er der globale Tiefpunkt.</div>

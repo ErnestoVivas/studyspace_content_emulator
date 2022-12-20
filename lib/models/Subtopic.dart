@@ -230,6 +230,10 @@ class Subtopic extends Model {
   Map<String, dynamic> toJson() => {
     'id': id, 'subject': _subject, 'topic': _topic, 'key': _key, 'index': _index, 'isGroupLabel': _isGroupLabel, 'name': _name, 'categories': _categories?.toJson(), 'createdAt': _createdAt?.format(), 'updatedAt': _updatedAt?.format()
   };
+  
+  Map<String, Object?> toMap() => {
+    'id': id, 'subject': _subject, 'topic': _topic, 'key': _key, 'index': _index, 'isGroupLabel': _isGroupLabel, 'name': _name, 'categories': _categories, 'createdAt': _createdAt, 'updatedAt': _updatedAt
+  };
 
   static final QueryField ID = QueryField(fieldName: "id");
   static final QueryField SUBJECT = QueryField(fieldName: "subject");

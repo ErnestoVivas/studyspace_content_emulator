@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'dart:io';
-import 'package:studyspace_content_emulator/models/DisplayElement.dart';
-import 'package:studyspace_content_emulator/amplify_s3_getter.dart';
+import 'package:studyspace_app_emulator/models/DisplayElement.dart';
+import 'package:studyspace_app_emulator/amplify_s3_getter.dart';
 import 'package:katex_flutter/katex_flutter.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
 import 'package:flutter_math_fork/ast.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-
 
 class OverviewPageArgs {
   final List<DisplayElement> displayElements;
@@ -202,40 +200,6 @@ class _OverviewPageState extends State<OverviewPage> {
         textAlign: TextAlign.justify,
         style: TextStyle(
           height: 1.5,
-        ),
-      );
-    } else if(_displayElements[currentPage][elementIndex].type == 1) {
-      contentWidget = MarkdownBody(
-        data: valueStr,
-        styleSheet: MarkdownStyleSheet(
-          a: TextStyle(
-            height: 1.5,
-          ),
-          p: TextStyle(
-            height: 1.5,
-          ),
-          blockquote: TextStyle(
-            height: 1.5,
-          ),
-          h1: TextStyle(
-            height: 2.7,
-          ),
-          h2: TextStyle(
-            height: 2.4,
-          ),
-          h3: TextStyle(
-            height: 2.4,
-          ),
-          h4: TextStyle(
-            height: 2.2,
-          ),
-          h5: TextStyle(
-            height: 2.2,
-          ),
-          h6: TextStyle(
-            height: 2.0,
-          ),
-          textAlign: WrapAlignment.spaceEvenly
         ),
       );
     } else if(_displayElements[currentPage][elementIndex].type == 2) {
