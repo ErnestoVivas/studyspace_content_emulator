@@ -51,47 +51,55 @@ class _TopicOverviewState extends State<TopicOverview> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        gradient: StudyspaceBackgroundGradients.getSubjectGradient(widget.constructorArguments.subject),
-      ),
-      child: Scaffold(
-
-        backgroundColor: Colors.transparent,
-
-        appBar: AppBar(
-          toolbarHeight: MediaQuery.of(context).size.height * 0.17,
-          leadingWidth: 70,
-          leading: Container(
-            padding: const EdgeInsets.fromLTRB(6, 0, 0, 0),
-            child: IconButton(
-              padding: const EdgeInsets.all(0),
-              splashRadius: 42,
-              iconSize: 64,
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              icon: Image.asset('assets/studyspace_arrow_back.png')
-            )
+    return Center(
+      child: Container(
+        width: 362,
+        height: 642,
+        decoration: BoxDecoration(
+          border: Border.all(
+            width: 2,
+            color: Colors.black
           ),
-          title: Text(
-            widget.constructorArguments.subtopicName,
-            style: TextStyle(
-              color: StudyspaceColors.getSubjectFontColor(widget.constructorArguments.subject),
-              fontWeight: FontWeight.w600,
-              fontSize: 20
-            )
-          ),
-          centerTitle: true,
+          gradient: StudyspaceBackgroundGradients.getSubjectGradient(widget.constructorArguments.subject),
         ),
+        child: Scaffold(
 
-        body: Container(
-          decoration: const BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.only(topLeft: Radius.circular(15.0), topRight: Radius.circular(15.0)),
+          backgroundColor: Colors.transparent,
+
+          appBar: AppBar(
+            toolbarHeight: 642 * 0.17,
+            leadingWidth: 70,
+            leading: Container(
+              padding: const EdgeInsets.fromLTRB(6, 0, 0, 0),
+              child: IconButton(
+                padding: const EdgeInsets.all(0),
+                splashRadius: 42,
+                iconSize: 64,
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                icon: Image.asset('assets/studyspace_arrow_back.png')
+              )
+            ),
+            title: Text(
+              widget.constructorArguments.subtopicName,
+              style: TextStyle(
+                color: StudyspaceColors.getSubjectFontColor(widget.constructorArguments.subject),
+                fontWeight: FontWeight.w600,
+                fontSize: 20
+              )
+            ),
+            centerTitle: true,
           ),
-          height: double.maxFinite,
-          child: _bodyWidget
+
+          body: Container(
+            decoration: const BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.only(topLeft: Radius.circular(15.0), topRight: Radius.circular(15.0)),
+            ),
+            height: double.maxFinite,
+            child: _bodyWidget
+          )
         )
       )
     );

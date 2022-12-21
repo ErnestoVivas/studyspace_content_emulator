@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -64,58 +65,72 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: const Color.fromRGBO(92, 146, 251, 1.0),
-        title: const Text('Studyspace App Emulator'),
-      ),
-      body: Center(
-        child: ListView(
-          padding: EdgeInsets.all(16),
-          children: <Widget>[
-            Container(
-              padding: EdgeInsets.all(16),
-              child: SizedBox(
-                width: 200,
-                height: 80,
-                child: ElevatedButton(
-                  onPressed: () {
-                    _openOverviewPage(context);
-                  },
-                  style: ButtonStyles.standardBlueButtonStyle,
-                  child: const Text(
-                    'Überblick'
-                  )
-                ),
-              ),
-            ),
-            Container(
-              padding: EdgeInsets.all(16),
-              child: SizedBox(
-                width: 200,
-                height: 80,
-                child: ElevatedButton(
-                  onPressed: _openSingleChoiceSet,
-                  style: ButtonStyles.standardBlueButtonStyle,
-                  child: const Text(
-                    'Single choice set'
-                  )
-                ),
-              ),
-            )
-          ],
+    return Center(
+      child:Container(
+        width: 362,
+        height: 642,
+        decoration: BoxDecoration(
+          border: Border.all(
+            width: 2,
+            color: Colors.black
+          ),
         ),
-      ),// This trailing comma makes auto-formatting nicer for build methods.
+        child: Scaffold(
+          appBar: AppBar(
+            backgroundColor: const Color.fromRGBO(92, 146, 251, 1.0),
+            title: const Text('Studyspace App Emulator'),
+          ),
+          body: Center(
+            child: ListView(
+              padding: EdgeInsets.all(16),
+              children: <Widget>[
+                Container(
+                  padding: EdgeInsets.all(16),
+                  child: SizedBox(
+                    width: 200,
+                    height: 80,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        _openOverviewPage(context);
+                      },
+                      style: ButtonStyles.standardBlueButtonStyle,
+                      child: const Text(
+                        'Überblick'
+                      )
+                    ),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(16),
+                  child: SizedBox(
+                    width: 200,
+                    height: 80,
+                    child: ElevatedButton(
+                      onPressed: _openSingleChoiceSet,
+                      style: ButtonStyles.standardBlueButtonStyle,
+                      child: const Text(
+                        'Single choice set'
+                      )
+                    ),
+                  ),
+                )
+              ],
+            ),
+          ),// This trailing comma makes auto-formatting nicer for build methods.
+        )
+      )
     );
   }
 
   void _openOverviewPage(BuildContext context) async {
     FilePickerResult? result = await FilePicker.platform.pickFiles();
     if(result != null) {
-      File overviewFile = File(result.files.single.path!);
+      //File overviewFile = File(result.files.single.path!);
       String filename = result.files.single.name;
+      int subject = int.parse(filename[0]);
       debugPrint(filename);
-      String overviewContent = await overviewFile.readAsString();
+      String overviewContent = utf8.decode(result.files.single.bytes ?? []);
+      //String overviewContent = await overviewFile.readAsString();
       List<String> overviewPages = overviewContent.split('NEWPAGE');
       List<DisplayElement> overviewDisplayElements = [];
       for(int i = 0; i < overviewPages.length; ++i) {
@@ -174,7 +189,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
       TopicOverviewArguments overviewConstructorArgs = TopicOverviewArguments(
         overviewDisplayElements,
-        0,
+        subject,
         '>Titel Unterthema<',
       );
       Navigator.pushNamed(context, '/topicOverview', arguments: overviewConstructorArgs);
@@ -184,11 +199,17 @@ class _MyHomePageState extends State<MyHomePage> {
   void _openSingleChoiceSet() async {
     FilePickerResult? result = await FilePicker.platform.pickFiles();
     if (result != null) {
-      File singleChoiceSetFile = File(result.files.single.path!);
+      //File singleChoiceSetFile = File(result.files.single.path!);
       String filename = result.files.single.name;
       int subject = int.parse(filename[0]);
-      String singleChoiceSet = await singleChoiceSetFile.readAsString();
-
+      //int subject = 0;
+      //String singleChoiceSet = await singleChoiceSetFile.readAsString();
+      String singleChoiceSet = utf8.decode(result.files.single.bytes ?? []);
+      //debugPrint(decoded);
+      //String singleChoiceSet = String.fromCharCodes(result.files.single.bytes ?? []);
+      //Uint8List.fromList(utf8.encode(result.files.single.bytes));
+      debugPrint(singleChoiceSet);
+      //debugPrint(filename);
       // parse file content
       List<SingleChoiceQuestion> questions = [];
       List<String> rows = singleChoiceSet.split('CRLF');
@@ -221,9 +242,9 @@ class _MyHomePageState extends State<MyHomePage> {
       }
       MultipleChoicePageArguments constructorArgs = MultipleChoicePageArguments(
         questions,
-        0,
-        StudyspaceColors.math,
-        StudyspaceColors.mathFont
+        subject,
+        StudyspaceColors.getSubjectColor(subject),
+        StudyspaceColors.getSubjectFontColor(subject)
       );
       Navigator.pushNamed(context, '/singleChoiceQuestionSet', arguments: constructorArgs);
     }

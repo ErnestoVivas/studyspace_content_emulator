@@ -70,51 +70,59 @@ class _MultipleChoicePageState extends State<MultipleChoicePage> {
   // build method
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Center(
+      child: Container(
+        width: 362,
+        height: 642,
         decoration: BoxDecoration(
+          border: Border.all(
+            width: 2,
+            color: Colors.black
+          ),
           gradient: StudyspaceBackgroundGradients.getSubjectGradient(widget.constructorArguments.subject),
         ),
         child: Scaffold(
 
-            backgroundColor: Colors.transparent,
+          backgroundColor: Colors.transparent,
 
-            // top app bar
-            appBar: AppBar(
-              toolbarHeight: MediaQuery.of(context).size.height * 0.17,
-              leadingWidth: 70,
-              leading: Container(
-                  padding: const EdgeInsets.fromLTRB(6, 0, 0, 0),
-                  child: IconButton(
-                      padding: const EdgeInsets.all(0),
-                      splashRadius: 42,
-                      iconSize: 64,
-                      onPressed: () {
-                        Navigator.pop(context, -1);
-                      },
-                      icon: Image.asset('assets/studyspace_arrow_back.png')
-                  )
-              ),
-              title: Text(
-                _currentTitle,
-                style: TextStyle(
-                    color: widget.constructorArguments.subjectFontColor,
-                    fontWeight: FontWeight.w600
-                ),
-                //backgroundColor: Theme.of(context).colorScheme.primary,
-              ),
-              centerTitle: true,
-
+          // top app bar
+          appBar: AppBar(
+            toolbarHeight: 642 * 0.17,
+            leadingWidth: 70,
+            leading: Container(
+              padding: const EdgeInsets.fromLTRB(6, 0, 0, 0),
+              child: IconButton(
+                padding: const EdgeInsets.all(0),
+                splashRadius: 42,
+                iconSize: 64,
+                onPressed: () {
+                  Navigator.pop(context, -1);
+                },
+                icon: Image.asset('assets/studyspace_arrow_back.png')
+              )
             ),
+            title: Text(
+              _currentTitle,
+              style: TextStyle(
+                color: widget.constructorArguments.subjectFontColor,
+                fontWeight: FontWeight.w600
+              ),
+              //backgroundColor: Theme.of(context).colorScheme.primary,
+            ),
+            centerTitle: true,
 
-            // main body displaying the question and possible answers
-            body: Material(
-              //color: Colors.white,
-                color: const Color.fromRGBO(248, 249, 250, 1.0),
-                borderRadius: const BorderRadius.only(topLeft: Radius.circular(15.0), topRight: Radius.circular(15.0)),
-                child: _bodyWidget
-            )
+          ),
+
+          // main body displaying the question and possible answers
+          body: Material(
+            //color: Colors.white,
+              color: const Color.fromRGBO(248, 249, 250, 1.0),
+              borderRadius: const BorderRadius.only(topLeft: Radius.circular(15.0), topRight: Radius.circular(15.0)),
+              child: _bodyWidget
+          )
 
         )
+      )
     );
 
   }
